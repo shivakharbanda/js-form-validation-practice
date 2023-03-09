@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+<script src="app.js" defer></script>
 </head>
 <body>
     <form action="">
@@ -19,43 +20,37 @@
         </div>
         <div class="form-content">
             <div class="form-element">
-                <label for="email">Email</label>
+                <label class="required" for="email">Email</label>
                 <div class="input-div">
-                    <input type="text" id="email">
+                    <input name="Email" type="email" id="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
                 </div>
-                <div class="error-div hidden"></div>
-                
+                <div class="error-div hidden"></div>  
             </div>
             <div class="form-element">
-                <label for="country">Country</label>                
+                <label class="required" for="country">Country</label>                
                 <div class="input-div">
-                    <input type="text" id="email">
+                    <input name="Country" type="text" id="country" required >
                 </div>
                 <div class="error-div hidden"></div>
-
             </div>
             <div class="form-element">
-                <label for="zip">Zip Code</label>
+                <label class="required" for="zip">Zip Code</label>
                 <div class="input-div">
-                    <input type="text" id="zip">
+                    <input name="Zip Code" type="text" id="zip" required>
                 </div>
                 <div class="error-div hidden"></div>
-
-
             </div>
             <div class="form-element">
-                <label for="password">Password</label>
+                <label class="required" for="password">Password</label>
                 <div class="input-div">
-                    <input type="password" id="password">
+                    <input pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" name="Password" type="password" id="password" required>
                 </div>
                 <div class="error-div hidden"></div>
-
-
             </div>
             <div class="form-element">
-                <label for="c_password">Confirm Password</label>
+                <label class="required" for="c_password">Confirm Password</label>
                 <div class="input-div">
-                    <input type="password" id="c_password">
+                    <input name="Confirm Password" type="password" id="c_password" required>
                 </div>
                 <div class="error-div hidden"></div>
 
